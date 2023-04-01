@@ -19,10 +19,8 @@ let currentNumber = "0";
 
 const inputNumber = (number) => {
   if (currentNumber === "0") {
-    console.log("Hai");
     currentNumber = number;
   } else {
-    console.log("Hallo");
     currentNumber += number;
   }
 };
@@ -57,13 +55,13 @@ const calculate = () => {
       result = parseFloat(prevNumber) + parseFloat(currentNumber);
       break;
     case "-":
-      result = parseFloat(prevNumber)  - parseFloat(currentNumber);
+      result = prevNumber  - currentNumber;
       break;
     case "*":
-      result = parseFloat(prevNumber)  * parseFloat(currentNumber);
+      result = prevNumber  * currentNumber;
       break;
     case "/":
-      result = parseFloat(prevNumber)  / parseFloat(currentNumber);
+      result = prevNumber  / currentNumber;
       break;
     default:
       break;
