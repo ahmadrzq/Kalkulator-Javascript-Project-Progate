@@ -34,6 +34,10 @@ button {
   width: 25%;
   outline: none;
 }
+
+.percentage{
+  background-color: gray !important;
+}
 .all-clear,
 .zero-btn {
   width: 50%;
